@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jesse — Sociologist</title>
+  <meta name="description" content="Sociologist focusing on environmental sociology, right-wing studies, and computational text analysis." />
+  <meta property="og:title" content="Jesse — Sociologist" />
+  <meta property="og:description" content="Environmental sociology • Right-wing studies • Text analysis" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/og-image.jpg" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020; /* slate-950 */
+      --panel:#0f172a; /* slate-900 */
+      --text:#e5e7eb; /* gray-200 */
+      --muted:#94a3b8; /* slate-400 */
+      --link:#93c5fd; /* sky-300 */
+      --accent:#38bdf8; /* sky-400 */
+      --card:#111827ee; /* gray-900 */
+      --border:#1f2937; /* gray-800 */
+      --badge:#1e293b; /* slate-800 */
+      --brand:#eab308; /* amber-500 */
+    }
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.6}
+    a{color:var(--link);text-decoration:none}
+    a:hover{color:var(--accent);text-decoration:underline}
+    .container{max-width:1024px;margin:0 auto;padding:2rem 1.25rem}
+    header{display:flex;flex-wrap:wrap;align-items:center;gap:1.25rem;padding:1.25rem;border-bottom:1px solid var(--border)}
+    .avatar{width:88px;height:88px;border-radius:50%;background:#0b1220;border:2px solid var(--border);object-fit:cover}
+    .title{flex:1 1 320px}
+    h1{margin:0;font-weight:700;letter-spacing:0.2px}
+    .subtitle{margin-top:0.4rem;color:var(--muted)}
+    .badges{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.75rem}
+    .badge{padding:0.25rem 0.5rem;border:1px solid var(--border);border-radius:999px;background:var(--badge);color:#cbd5e1;font-size:0.85rem}
+    nav{display:flex;gap:1rem;flex-wrap:wrap;margin-left:auto}
+    nav a{padding:0.5rem 0.75rem;border-radius:0.5rem}
+    nav a.active, nav a:hover{background:#0b1220}
+
+    .grid{display:grid;gap:1.25rem;margin-top:1.5rem}
+    @media(min-width:900px){.grid{grid-template-columns:1.2fr 0.8fr}}
+
+    .card{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:1.25rem}
+    .card h2{margin:0 0 0.75rem 0;font-size:1.25rem}
+    .muted{color:var(--muted)}
+    .list{margin:0;padding:0;list-style:none}
+    .list li{padding:0.5rem 0;border-bottom:1px dashed var(--border)}
+    .list li:last-child{border-bottom:none}
+    .meta{font-size:0.9rem;color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.6rem 0.9rem;border:1px solid var(--border);border-radius:0.75rem;background:#0b1220;color:#e5e7eb}
+    .btn:hover{transform:translateY(-1px)}
+    .btn svg{width:18px;height:18px}
+
+    footer{border-top:1px solid var(--border);margin-top:2rem;padding:1.25rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:space-between}
+    .social{display:flex;gap:0.75rem;flex-wrap:wrap}
+    .pill{border:1px solid var(--border);border-radius:999px;padding:0.25rem 0.6rem;background:#0b1220}
+
+    /* Publication styles */
+    .pub{display:grid;grid-template-columns:1fr;gap:0.4rem}
+    .pub .title{font-weight:600}
+    .pub .authors, .pub .venue{color:var(--muted);font-size:0.95rem}
+    .pub .links{display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:0.25rem}
+
+    /* Accessibility helpers */
+    :focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <div class="container">
+    <header>
+      <img class="avatar" src="/assets/avatar.jpg" alt="Headshot of Jesse" />
+      <div class="title">
+        <h1>Jesse</h1>
+        <div class="subtitle">Doctoral student · Environmental sociology · Right‑wing studies · Computational text analysis</div>
+        <div class="badges">
+          <span class="badge">Yale University</span>
+          <span class="badge">R · Python · NLP</span>
+          <span class="badge">Complex systems</span>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#about" class="active">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="grid">
+      <!-- Left column -->
+      <section class="card" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>
+          I am a PhD student in sociology studying culture, philosophy, and the environment, with a research focus on right‑wing movements and computational text analysis. My dissertation examines how modern ideas of “nature” shape moral reasoning and social knowledge.
+        </p>
+        <p class="muted">Interests: environmental sociology, computational social science, discourse & frame analysis, natural law, complex systems.</p>
+        <div class="links" style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:0.6rem">
+          <a class="btn" href="#cv" title="View CV" aria-label="View CV">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+            CV (PDF)
+          </a>
+          <a class="btn" href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="btn" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="mailto:email@example.com">Email</a>
+        </div>
+      </section>
+
+      <section class="card" id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Research</h2>
+        <ul class="list">
+          <li>
+            <div class="title">Embedding Background Texts: Tracing the Discursive Diffusion of Extremism</div>
+            <div class="meta">With a la carte embeddings & regression to compare Fox News and Stormfront (2005–2020).</div>
+          </li>
+          <li>
+            <div class="title">Avatar Politics: Visual Self‑Presentation in White Nationalist Forums</div>
+            <div class="meta">A mixed‑methods study combining computer vision and qualitative coding.</div>
+          </li>
+          <li>
+            <div class="title">Nature, Order, and Moral Reasoning</div>
+            <div class="meta">A book project on natural law and the politics of “nature.”</div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Right column -->
+      <section class="card" id="publications" aria-labelledby="pubs-title">
+        <h2 id="pubs-title">Selected publications</h2>
+        <div class="pub">
+          <div class="title">Embedding Background Texts: A Method for Tracing the Diffusion of Extremist Frames</div>
+          <div class="authors">Jesse · Coauthor</div>
+          <div class="venue">Preprint, 2025</div>
+          <div class="links">
+            <a href="#" class="btn">PDF</a>
+            <a href="#" class="btn">Code</a>
+          </div>
+        </div>
+        <hr style="border-color:var(--border);margin:1rem 0">
+        <div class="pub">
+          <div class="title">Nature and Cultural Theory: Toward Neoliberal Bacteria</div>
+          <div class="authors">Jesse</div>
+          <div class="venue">Manuscript under revision</div>
+          <div class="links">
+            <a href="#" class="btn">Draft</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="teaching" aria-labelledby="teach-title">
+        <h2 id="teach-title">Teaching</h2>
+        <ul class="list">
+          <li><strong>Computational Text Analysis (TA)</strong> — tokenization to embedding regression, reproducible workflows in R.</li>
+          <li><strong>Environmental Sociology</strong> — classical to contemporary theories, case‑based discussions.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="cv" aria-labelledby="cv-title">
+        <h2 id="cv-title">CV</h2>
+        <p class="muted">Replace <code>/assets/cv.pdf</code> with your actual file path.</p>
+        <p>
+          <a class="btn" href="/assets/cv.pdf" target="_blank" rel="noopener" aria-label="Download CV">Download CV</a>
+        </p>
+      </section>
+
+      <section class="card" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+        <p>Scholar: <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a> · GitHub: <a href="https://github.com" target="_blank" rel="noopener">@username</a> · ORCID: <a href="https://orcid.org" target="_blank" rel="noopener">0000-0000-0000-0000</a></p>
+        <div class="social">
+          <span class="pill">New Haven, CT → Northern Spain</span>
+          <span class="pill">Open to collaboration</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Jesse. All rights reserved.</div>
+      <div>Built with GitHub Pages</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
